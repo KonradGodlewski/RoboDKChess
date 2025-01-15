@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Robotic Chess</title>
+        <script type="text/javascript" src="{{url_for('static', filename='jquery-3.5.1.min.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static', filename='chessboard-1.0.0.min.js')}}"></script>
+        <link rel="stylesheet" href="{{url_for('static', filename='chessboard-1.0.0.min.css')}} ">
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <div class="flex-container">
+            <div id="game">
+                <h1 id="turn">Click button to start</h1>
+                <div id="myBoard" style="width:500px;"></div>
+                <button id="aiBtn" style="margin-top:20px">Start Game</button>
+                <button id="collectBtn" style="margin-top:20px">Reset board</button>
+                <input type="checkbox" id="loop" name="loopCheckbox" value="loopCheckbox">
+                <label for="aiCheckbox">loop</label>
+                <div><textarea id="diag" disabled style="width:500px;height:200px;margin-top:20px;"></textarea></div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="{{url_for('static', filename='chess2.js')}}" state="{{state}}" fen="{{fen}}"></script>
+</html>
+
