@@ -1,0 +1,31 @@
+Open "COM4:" As #1
+If M_EHOrg = 0 Then
+    EHOrg 1
+EndIf
+Input #1,DATA1,DATA2,DATA3,DATA4,DATA5,DATA6,DATA7
+M1 = Rad(DATA1)
+M2 = Rad(DATA2)
+M3 = Rad(DATA3)
+M4 = Rad(DATA4)
+M5 = Rad(DATA5)
+M6 = Rad(DATA6)
+M7 = DATA7
+J10.J1 = M1
+J10.J2 = M2
+J10.J3 = M3
+J10.J4 = M4
+J10.J5 = M5
+J10.J6 = M6
+Mov J10
+Print #1,0
+If M7 = 0 Then
+    Dly 0.2
+    EHClose 1,20,100
+    Wait M_EHBusy = 0
+ElseIf M7 = 1 Then
+    Dly 0.2
+    EHOpen 1,30,50
+    Wait M_EHBusy = 0
+EndIf
+Wait M_EHBusy = 0
+Print #1,1
