@@ -1,10 +1,7 @@
 # RoboDK chess
-A game of chess played by the robot in the RoboDK. It can also be played by a real robot using RoboDK simulation.
+A game of chess played by two chess engines in the **browser** (localhost:5000), controlls the movement of the robot in **RoboDK** simulation. Then the **real robot** replicates the robot movement from the simulation.
 
-Gif:
-<br/>
-![Gif1](https://github.com/user-attachments/assets/34d45f3a-85d5-4b11-a945-f0ea6f9666d0)
-<br/>
+Altough there are two robots in the videos, the current version of the programm only uses one robot to move both black and white pieces. 
 
 Board preperation:
 <br/>
@@ -15,4 +12,24 @@ Fragment of a game:
 <br/>
 ![Gif2](https://github.com/user-attachments/assets/2e1813c3-e110-473a-ad09-503f66b19c4e)
 <br/>
+
+## Prerequisites
+* [RoboDK](https://robodk.com/)
+* RTToolbox (for simulation) or real robot (Used in the project is Mitsubishi RV-2FR)
+  
+
+## Getting started
+### Python script
+Run python script (**MitsubishiChess.py**) and go to the address **localhost:5000** in the web browser. You should see a empty chessboard. Press the login button below the chessboard and proceed to login (user:admin,password:admin123 (it can be changed in the **MitsubishiChess.py** script in line 14))
+### Robot/Simulation
+Set up robot parameters like shown in the picture below (Port number may vary, just have to be the same in both robot parameters and **MitsubishiChess.py** script (line 216)
+
+![Parameters](https://github.com/user-attachments/assets/03fe2e95-be21-432d-bc3d-ccc253bd2d5c)
+
+Make sure that the robot is in the same network as the pc to establish connetcion between them. Change the IP address to the one you are using in the **MitsubishiChess.py** script (line 215)
+If you're using RTToolbox only for simulation, then the IP address is the same as the IP address of your PC.
+At this point run the **MELFA_script** on a robot or in the simulator. 
+
+## Game of chess
+Once everything is set up go back to the browser, press **start game** and enjoy the results.
 
