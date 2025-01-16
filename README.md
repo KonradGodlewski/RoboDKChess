@@ -13,6 +13,10 @@ Fragment of a game:
 ![Gif2](https://github.com/user-attachments/assets/2e1813c3-e110-473a-ad09-503f66b19c4e)
 <br/>
 
+Real robot:
+![Gif4](https://github.com/user-attachments/assets/25ffc048-c87f-4600-b985-ff55f52ab1b9)
+
+
 ## Prerequisites
 * [RoboDK](https://robodk.com/)
 * RTToolbox (for simulation) or real robot (Used in the project is Mitsubishi RV-2FR)
