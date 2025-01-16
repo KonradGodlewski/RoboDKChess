@@ -1,5 +1,7 @@
 # RoboDK chess
-A game of chess played by two chess engines in the **browser** (localhost:5000), controlls the movement of the robot in **RoboDK** simulation. Then the **real robot** replicates the robot movement from the simulation.
+A game of chess played by two chess engines that can be previewed in the **browser**. Every move is performed by the robot in **RoboDK** and then the **real robot** replicates the robot movement from the simulation.
+
+This solution allows for the robot to play an entire game of chess including putting pieces on the chessboard before the game starts and putting them back to the side once the game is finished. The robot can also play multiple games one after the other by toggling the loop checkbox.
 
 Altough there are two robots in the videos, the current version of the programm only uses one robot to move both black and white pieces. 
 
@@ -14,8 +16,9 @@ Fragment of a game:
 <br/>
 
 Real robot:
+<br/>
 ![Gif4](https://github.com/user-attachments/assets/25ffc048-c87f-4600-b985-ff55f52ab1b9)
-
+<br/>
 
 ## Prerequisites
 * [RoboDK](https://robodk.com/)
