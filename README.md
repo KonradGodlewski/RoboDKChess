@@ -29,7 +29,7 @@ Real robot:
 ### Python script
 Run python script (**MitsubishiChess.py**) and go to the address **localhost:5000** in the web browser. You should see a empty chessboard. Press the login button below the chessboard and proceed to login (user:admin,password:admin123 (it can be changed in the **MitsubishiChess.py** script in line 14))
 ### Robot/Simulation
-Set up robot parameters like shown in the picture below (Port number may vary, just have to be the same in both robot parameters and **MitsubishiChess.py** script (line 216)
+Set up the robot parameters like shown in the picture below (Port number may vary, just have to be the same in both robot parameters and **MitsubishiChess.py** script (line 216)
 
 ![Parameters](https://github.com/user-attachments/assets/03fe2e95-be21-432d-bc3d-ccc253bd2d5c)
 
